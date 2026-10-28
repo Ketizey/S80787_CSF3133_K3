@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+<body>
+    <!-- 
+      Error 1 (Line 10): Incorrect closing tag </head> instead of </header>
+      Error 2 (Line 28): colspan="3" exceeds the 3-column table limit; changed to colspan="2"
+      Error 3 (Line 32): Typo in cell separation; replaced inner <td> with </td>
+      Error 4 (Line 40): Input id="fullname" does not match label for="name"; changed id to "name"
+      Error 5 (Lines 42 & 44): Radio buttons have different names; grouped both under name="rating"
+      Error 6 (Line 47): Label for="labs" does not match input id="lab"; changed for to "lab"
+      Error 7 (Line 49): Typo in closing tag </from> instead of </form>
+    -->
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header>
+    <nav>
+        <a href="#results">Results</a> | <a href="#form">Feedback Form</a>
+    </nav>
+    <section id="results">
+        <h2>Feedback Summary</h2>
+        <table border="1">
+            <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Introduction to HTML</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td colspan="2">Tables and Forms</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Semantic HTML</td>
+                <td>4.0</td>
+            </tr>
+        </table>
+    </section>
+    <section id="form">
+        <h2>Give Your Feedback</h2>
+        <form action="submit_feedback.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            
+            <label>Overall rating:</label><br>
+            <input type="radio" id="good" name="rating" value="good">
+            <label for="good">Good</label>
+            <input type="radio" id="poor" name="rating" value="poor">
+            <label for="poor">Poor</label><br>
+            
+            <input type="checkbox" id="lab" name="lab" value="yes">
+            <label for="lab">I attended all labs</label><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+        <h2>Part 2: Extend into a Two-Page Website</h2>
+        <a href="lab2_ExerB2.html">Click Here For Part 2</a>
+    </footer>
+</body>
+</html>
