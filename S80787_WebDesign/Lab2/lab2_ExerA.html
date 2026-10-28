@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Workshop</title>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Programming Workshop</h1>
+        <p>Join us for an exciting programming workshop 
+           where you can enhance your coding skills and learn 
+           from industry experts.</p>
+    </header><br>
+
+    <!-- Navigation for three tags -->
+    <nav>
+        <!-- Using unordered list -->  
+        <h2>Navigation</h2>
+
+        <a href="#schedule">Schedule</a> | 
+        <a href="register.html">Registration</a> |
+        <a href="#about">About</a>
+
+    </nav><br>
+
+    <!-- Section id set as 'schedule' to link the hyperlink at nav -->
+    <section id="about">
+        <h2>About the Workshop</h2>
+        <p>The workshop will be held over two days, with sessions covering various 
+           programming languages and techniques.</p>
+
+           <!-- Using article as a block of content -->
+        <article>
+            <h3>Speaker: Dr John</h3>
+            <p>Dr John is a renowned software engineer with over 15 years of experience 
+               in the industry. He will be sharing his insights on modern programming practices.</p>
+        </article>
+
+        <article>
+            <h3>Activity: Java Coding</h3>
+            <p>Participants will engage in hands-on Java coding exercises, 
+               allowing them to apply what they have learned in a practical setting.</p>
+        </article>
+    </section>
+
+    <!-- Section for Event Schedule-->
+    <section id="schedule">
+        <h2>Event Schedule Table</h2>
+        <table border="1">
+            <!-- Using table row, table header and table data-->
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person In Charge</th>
+            </tr>
+
+            <tr>
+                <td>9:00 AM - 10:30 AM</td>
+                <td>Introduction to Programming</td>
+                <td>BYOD 1</td>
+                <td>Dr Haikal</td>  
+            </tr>
+
+            <tr>
+                <td>10:30 AM - 12:00 PM</td>
+                <td>Java Basics</td>
+                <td>BYOD 2</td>
+                <td>Dr ts. Amier</td>
+            </tr>
+
+            <tr>
+                <td >12:00 PM - 1:00 PM</td>
+                <!-- Using colspan to span across multiple columns-->
+                <td colspan="3" style="text-align: center;">Lunch Break</td>
+            </tr>
+
+            <tr>
+                <td>1:00 PM - 3:00 PM</td>
+                <!-- Using rowspan to span 2 rows-->
+                <td rowspan="2">Hands-on Java Coding</td>
+                <td>BYOD 1</td>
+                <td>Encik Mal</td>
+            </tr>
+
+            <tr>
+                <td>3:00 PM - 4:30 PM</td>
+                <td>BYOD 2</td>
+                <td>Encik Abu</td>
+            </tr>
+
+            <tr>
+                <td>4:30 PM - 5:00 PM</td>
+                <td>Q&A Session</td>
+                <td>BYOD 1</td>
+                <td>Prof Dr Madya ts. Mad</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
