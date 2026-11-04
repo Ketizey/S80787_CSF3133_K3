@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bakery Online Order Page</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <h1>Campus Bakery</h1>
+        <span style="color: rgb(241, 103, 12);">The Best in Town</span>
+    </div>
+    
+    <!-- Navigation Section -->
+    <div id="nav">
+        <nav>
+            <a href="#content">Content</a> |
+            <a href="#sidebar">Sidebar</a> |
+            <a href="#footer">Footer</a>
+        </nav>
+    </div>
+
+    <!-- Content Section with Form -->
+    <div id="content">
+        <div>
+            <h2>Order Your Favorite Treats</h2>
+            <p>Welcome to the <strong>Campus Bakery online order page!</strong></p>
+            <p><em>We offer the freshest baked goods on campus!</em></p>
+        
+            <h2>Menu : </h2>
+            <ul>
+                <li>Bread</li>
+                <li>Cake</li>
+                <li>Cookies</li>
+                <li>Cupcakes</li>
+            </ul>
+
+            <a href="#nav">Return to Navigation</a>  
+        </div>
+        
+        <!-- Order Form -->
+        <div>
+            <section>
+            <p><span style="color: rgb(230, 17, 173);">Please fill out the form below to place your order:</span></p>
+            
+            <form action="#" method="post" oninput="sweetness.value=parseInt(range.value)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="treat">Treat:</label>
+                <input list="treats" id="treat" name="treat"><br><br>
+
+                <datalist id="treats">
+                    <option value="Bread RM 5.00"></option>
+                    <option value="Cake RM 8.00"></option>
+                    <option value="Cookies RM 4.00"></option>
+                    <option value="Cupcakes RM 3.00"></option>
+                </datalist>
+
+                <label for="color">Color:</label>
+                <input type="color" id="color" name="color"><br><br>
+
+                <label for="range">Sweetness Level:</label>
+                <input id="range" type="range" min="1" max="5" step="1" value="0">
+                <output name="sweetness" for="range"> 0 </output><br><br>
+
+                <input type="submit" value="Place Order">
+            </form>
+            </section>
+        </div>
+
+        <!-- Calculator Section -->
+        <div id="calculator">
+            <h2>Calculator</h2>
+            <form oninput="result.value = (parseFloat(num1.value) || 0) + (parseFloat(num2.value) || 0)">
+                <input type="number" id="num1" name="num1" value="0">
+                +
+                <input type="number" id="num2" name="num2" value="0">
+                =
+                <output name="result" for="num1 num2">0</output>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sidebar-->
+    <div id="sidebar">
+        <h2>Sidebar</h2>
+        <p>Brand Name: Campus Bakery &reg;</p>
+        <p>If order exceeds 10 pieces, get free &lt;drink&gt;</p>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <p>&copy; 2026 Campus Bakery. All rights reserved.</p>
+    </div>
+        
+</body>
+
+<!-- In the form, if enter only 'myemail' in the email field, then it will pop up
+ a validation message that says include '@' symbol-->
+</html>
