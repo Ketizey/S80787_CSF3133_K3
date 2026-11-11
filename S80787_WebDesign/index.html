@@ -5,158 +5,245 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab Report and Submission</title>
     <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-light: #eff6ff;
+            --border: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
             line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
         }
 
         header {
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-left: 5px solid var(--primary);
+            padding: 24px 28px;
+            border-radius: var(--radius);
+            margin-bottom: 28px;
+            box-shadow: var(--shadow);
         }
 
         header h1 {
-            margin: 0 0 5px 0;
-            color: #111;
+            font-size: 1.6rem;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
         }
 
         header p {
-            margin: 2px 0;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin: 4px 0;
+        }
+
+        header p strong {
+            color: var(--text-main);
         }
 
         section {
-            margin-bottom: 30px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
         }
 
         h2 {
-            font-size: 1.2em;
-            color: #444;
-            margin-bottom: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
         }
 
         ol {
-            margin-top: 0;
-            padding-left: 25px;
+            list-style-position: inside;
+            padding-left: 4px;
         }
 
         li {
             margin-bottom: 8px;
         }
 
+        li:last-child {
+            margin-bottom: 0;
+        }
+
         a {
-            color: #0056b3;
+            color: var(--primary);
             text-decoration: none;
+            font-weight: 500;
+            padding: 4px 8px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            display: inline-block;
         }
 
         a:hover {
+            background-color: var(--primary-light);
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Lab Report and Submission</h1>
-        <p><strong>Name:</strong> AHMAD ISA ISKANDAR BIN CHOI SUNG BOK</p>
-        <p><strong>Matric Number:</strong> S80787</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Lab Report and Submission</h1>
+            <p><strong>Name:</strong> AHMAD ISA ISKANDAR BIN CHOI SUNG BOK</p>
+            <p><strong>Matric Number:</strong> S80787</p>
+        </header>
 
-    <section>
-        <article>
-            <h2>Wonderbuuk Exercise 1 Work</h2>
-            <nav>
-                <ol>
-                    <li><a href="Exercise1/index.html">Exercise 1</a></li>
-                    <li><a href="Exercise1/lab1.html">Lab 1</a></li>
-                </ol>   
-            </nav>
-        </article>
-    </section>
+        <section>
+            <article>
+                <h2>Wonderbuuk Exercise 1 Work</h2>
+                <nav>
+                    <ol>
+                        <li><a href="Exercise1/index.html">Exercise 1</a></li>
+                        <li><a href="Exercise1/lab1.html">Lab 1</a></li>
+                    </ol>   
+                </nav>
+            </article>
+        </section>
 
-    <section>
-        <article>
-            <h2>Lab 1 Work</h2>
-            <nav>
-                <ol>
-                    <li><a href="Lab1/lab1_ExerA.html">Lab 1 Exercise A</a></li>
-                    <li><a href="Lab1/lab1_ExerB.html">Lab 1 Exercise B</a></li>
-                    <li><a href="https://ketizey.github.io/S80787_CSF3133_K3/S80787_WebDesign/Lab1/Lab1_CSF3133_S80787_K3.pdf">Lab 1 Report (Validation and Source Code)</a></li>
-                </ol>
-            </nav>
-        </article>
-    </section>
+        <section>
+            <article>
+                <h2>Lab 1 Work</h2>
+                <nav>
+                    <ol>
+                        <li><a href="Lab1/lab1_ExerA.html">Lab 1 Exercise A</a></li>
+                        <li><a href="Lab1/lab1_ExerB.html">Lab 1 Exercise B</a></li>
+                        <li><a href="https://ketizey.github.io/S80787_CSF3133_K3/S80787_WebDesign/Lab1/Lab1_CSF3133_S80787_K3.pdf">Lab 1 Report (Validation and Source Code)</a></li>
+                    </ol>
+                </nav>
+            </article>
+        </section>
 
-    <section>
-        <article>
-            <h2>Wonderbuuk Exercise 2 Work</h2>
-            <nav>
-                <ol>
-                    <li><a href="Exercise2/exercise1.html">Exercise 1</a></li>
-                    <li><a href="Exercise2/exercise2.html">Exercise 2</a></li>
-                    <li><a href="Exercise2/labexercise2.html">Lab Exercise</a></li>
-                </ol>
-            </nav>
-        </article>
-    </section>
+        <section>
+            <article>
+                <h2>Wonderbuuk Exercise 2 Work</h2>
+                <nav>
+                    <ol>
+                        <li><a href="Exercise2/exercise1.html">Exercise 1</a></li>
+                        <li><a href="Exercise2/exercise2.html">Exercise 2</a></li>
+                        <li><a href="Exercise2/labexercise2.html">Lab Exercise</a></li>
+                    </ol>
+                </nav>
+            </article>
+        </section>
 
-    <section>
-        <article>
-            <h2>Lab 2 Work</h2>
-            <nav>
-                <ol>
-                    <li><a href="Lab2/lab2_ExerA.html">Lab 2 Exercise A</a></li>
-                    <li><a href="Lab2/lab2_ExerB.html">Lab 2 Exercise B</a></li>
-                    <li><a href="https://ketizey.github.io/S80787_CSF3133_K3/S80787_WebDesign/Lab2/Lab2_S80787.pdf">Lab 2 Report (Validation and Source Code)</a></li>
-                </ol>
-            </nav>
-        </article>
-    </section>
+        <section>
+            <article>
+                <h2>Lab 2 Work</h2>
+                <nav>
+                    <ol>
+                        <li><a href="Lab2/lab2_ExerA.html">Lab 2 Exercise A</a></li>
+                        <li><a href="Lab2/lab2_ExerB.html">Lab 2 Exercise B</a></li>
+                        <li><a href="https://ketizey.github.io/S80787_CSF3133_K3/S80787_WebDesign/Lab2/Lab2_S80787.pdf">Lab 2 Report (Validation and Source Code)</a></li>
+                    </ol>
+                </nav>
+            </article>
+        </section>
 
-    <section>
-        <article>
-            <h2>Wonderbuuk Exercise 3 Work</h2>
-            <nav>
-                <ol>
-                    <li><a href="Exercise3/block.html">block.html</a></li>
-                    <li><a href="Exercise3/div.html">div.html</a></li>
-                    <li><a href="Exercise3/entity.html">entity.html</a></li>
-                    <li><a href="Exercise3/inattribute5.html">inattribute5.html</a></li>
-                    <li><a href="Exercise3/input5.html">input5.html</a></li>
-                    <li><a href="Exercise3/intro.html">intro.html</a></li>
-                    <li><a href="Exercise3/output5.html">output5.html</a></li>
-                    <li><a href="Exercise3/lab3.html">lab3.html</a></li>
-                </ol>
-            </nav>
-        </article>
-    </section>
+        <section>
+            <article>
+                <h2>Wonderbuuk Exercise 3 Work</h2>
+                <nav>
+                    <ol>
+                        <li><a href="Exercise3/block.html">block.html</a></li>
+                        <li><a href="Exercise3/div.html">div.html</a></li>
+                        <li><a href="Exercise3/entity.html">entity.html</a></li>
+                        <li><a href="Exercise3/inattribute5.html">inattribute5.html</a></li>
+                        <li><a href="Exercise3/input5.html">input5.html</a></li>
+                        <li><a href="Exercise3/intro.html">intro.html</a></li>
+                        <li><a href="Exercise3/output5.html">output5.html</a></li>
+                        <li><a href="Exercise3/lab3.html">lab3.html</a></li>
+                    </ol>
+                </nav>
+            </article>
+        </section>
 
-    <section>
-        <article>
-            <h2>Lab 3 Work</h2>
-            <nav>
-                <ol>
-                    <li><a href="Lab3/lab3_ExerA.html">Lab 3 Exercise A</a></li>
-                    <li><a href="Lab3/lab3_ExerB.html">Lab 3 Exercise B</a></li>
-                    <li><a href="Lab3/lab3_ExerB2.html">Lab 3 Exercise B 2</a></li>
-                    <li><a href="https://ketizey.github.io/S80787_CSF3133_K3/S80787_WebDesign/Lab3/Lab3_CSF3133.pdf">Lab 3 Report (Validation and Source Code)</a></li>
-                </ol>
-            </nav>
-        </article>
-    </section>
+        <section>
+            <article>
+                <h2>Lab 3 Work</h2>
+                <nav>
+                    <ol>
+                        <li><a href="Lab3/lab3_ExerA.html">Lab 3 Exercise A</a></li>
+                        <li><a href="Lab3/lab3_ExerB.html">Lab 3 Exercise B</a></li>
+                        <li><a href="Lab3/lab3_ExerB2.html">Lab 3 Exercise B 2</a></li>
+                        <li><a href="https://ketizey.github.io/S80787_CSF3133_K3/S80787_WebDesign/Lab3/Lab3_CSF3133.pdf">Lab 3 Report (Validation and Source Code)</a></li>
+                    </ol>
+                </nav>
+            </article>
+        </section>
 
-    <section>
-        <article>
-            <h2>Link Github Repository</h2>
-            <nav>
-                <ol>
-                    <li><a href="https://github.com/ketizey/S80787_CSF3133_K3">Link to Github Repository</a></li>
-                </ol>
-            </nav>
-        </article>
-    </section>
+        <section>
+            <article>
+                <h2>Wonderbuuk Exercise 4 Work</h2>
+                <nav>
+                    <ol>
+                        <li><a href="Exercise4/lab4.html">Lab 4</a></li>
+                        <li><a href="Exercise4/class.html">Class</a></li>
+                        <li><a href="Exercise4/navigation.html">Navigation</a></li>
+                        <li><a href="Exercise4/stail.html">Style</a></li>
+                        <li><a href="Exercise4/stailID.html">StyleID</a></li>
+                        <li><a href="Exercise4/stailLink.html">Style Link</a></li>
+                        <li><a href="Exercise4/structure.html">Structure</a></li>
+                        <li><a href="Exercise4/Teks.html">Text</a></li>
+                        <li><a href="Exercise4/video.html">Video</a></li>
+                    </ol>
+                </nav>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2>Lab 4 Work</h2>
+                <nav>
+                    <ol>
+                        <li><a href="Lab4/lab4_ExerA.html">Lab 4 Exercise A</a></li>
+                        <li><a href="Lab4/lab4_ExerB.html">Lab 4 Exercise B</a></li>
+                        <li><a href="Lab4/lab4_ExerB2.html">Lab 4 Exercise B 2</a></li>
+                        <li><a href="https://ketizey.github.io/S80787_CSF3133_K3/S80787_WebDesign/Lab4/Lab4_S80787.pdf">Lab 4 Report (Validation and Source Code)</a></li>
+                    </ol>
+                </nav>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2>Link Github Repository</h2>
+                <nav>
+                    <ol>
+                        <li><a href="https://github.com/ketizey/S80787_CSF3133_K3">Link to Github Repository</a></li>
+                    </ol>
+                </nav>
+            </article>
+        </section>
+    </div>
 </body>
 </html>
