@@ -1,0 +1,40 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse; 
+    width: 100%;
+  }
+
+table, th, td {
+border: 2px solid black; 
+}
+
+th, td {
+padding: 8px; 
+text-align: left;
+}
+
+nav {
+    background-color: rgb(15, 15, 219);
+    color: white;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    background-color: red;
+    color: white;
+}
+
+footer {
+    color: blue;
+}
