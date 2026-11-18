@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fbfaf8;
+    color: #333333;
+}
+
+/* 1. Header with Background Image */
+header {
+    background-image: url("header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 8px 0;
+}
+
+header p {
+    margin: 0;
+}
+
+/* 2. Horizontal Navigation Bar */
+nav {
+    background-color: rgb(48, 48, 48);
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #e67e22;
+    color: white;
+}
+
+/* 3. Content Section and Text Formatting */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 20px auto;
+}
+
+main h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #163a5f;
+}
+
+main .b1 p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+main .b2 p {
+    border-radius: 3px;
+    border-color: red;
+    border-style: solid;
+}
+
+/* 5. Styled Table */
+#menu-table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    font-size: 14px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    border-color: red;
+    border-style: solid;
+}
+
+#menu-table th,
+#menu-table td {
+    border: 1px solid #dddddd;
+    padding: 10px 15px;
+}
+
+#menu-table th {
+    background-color: #e67e22;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#menu-table tbody tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+#menu-table tbody tr:hover {
+    background-color: rgb(255, 228, 177);
+}
+
+#menu-table .rm {
+    text-align: right;
+}
+
+/* 6. Footer */
+footer {
+    background-color: #e9e2d6;
+    color: #555555;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
